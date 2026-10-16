@@ -36,7 +36,14 @@ function sheets_() {
   const book=SpreadsheetApp.openById(id);
   return {queue:book.getSheetByName('제안'), contacts:book.getSheetByName('알림')};
 }
-function rows_(sheet) { return sheet.getLastRow()<2?[]:sheet.getRange(2,1,sheet.getLastRow()-1,sheet.getLastColumn()).getValues(); }
+function rows_(sheet) {
+  // Read through the same API used for RAW writes; SpreadsheetApp can return a stale read cache.
+  const width=sheet.getName()==='제안'?HEADERS.length:CONTACT_HEADERS.length;
+  const endColumn=String.fromCharCode(64+width);
+  const range="'"+sheet.getName().replace(/'/g,"''")+"'!A2:"+endColumn;
+  const result=Sheets.Spreadsheets.Values.get(sheet.getParent().getId(),range,{valueRenderOption:'UNFORMATTED_VALUE'});
+  return (result.values||[]).map(row=>Array.from({length:width},(_,i)=>row[i]??''));
+}
 function text_(value,max) {
   if(typeof value!=='string') throw new Error('입력 내용을 확인해 주세요.');
   const valueClean=value.trim().normalize('NFC');
