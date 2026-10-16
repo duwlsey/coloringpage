@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#faf9f5"><title>즐거운 색칠공부</title>
+<style>html{background:#faf9f5}.font-loading body{visibility:hidden}</style>
+<script>if(document.fonts)document.documentElement.classList.add('font-loading');</script>
+<link rel="preload" href="fonts/OkDanDan-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script defer src="drawings.js"></script><script defer src="app.js"></script>
+<script defer src="font-ready.js"></script>
+</head>
+<body>
+<svg class="texture-defs" xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true"><defs><filter id="crayon-edge" x="-10%" y="-20%" width="120%" height="140%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="2" seed="8" result="grain"/><feDisplacementMap in="SourceGraphic" in2="grain" scale="1.8" xChannelSelector="R" yChannelSelector="G" result="rough"/><feColorMatrix in="grain" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.5 -.15" result="wax"/><feComposite in="rough" in2="wax" operator="in"/></filter></defs></svg>
+<header><h1 class="site-title"><svg class="title-scribble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 110" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#crayon-edge)"><path stroke="#e5a868" d="M12 73 Q4 27 27 31 T54 63 Q33 91 29 61 T71 37 L52 78 L90 23 L84 77"/><path stroke="#df979b" d="M83 55 Q99 12 113 42 T126 80 Q96 86 112 49 T155 37 L143 81 Q157 19 178 34 L163 75"/><path stroke="#91bbaa" d="M177 72 Q162 27 187 28 T218 71 Q186 89 199 48 T244 39 L227 80 L257 25 L253 75"/><path stroke="#a3b9d3" d="M251 68 Q250 17 273 29 T296 72 Q265 91 280 49 T324 39 L309 79 Q332 19 347 35 L336 78"/><path stroke="#c0a6cc" d="M342 65 Q344 15 365 32 T384 76 Q356 84 371 46 T414 36 L400 77 L428 29 L419 76 Q456 10 463 54 L447 80"/></g></svg><span>즐거운 색칠공부</span></h1></header>
+<main>
+<nav id="categories" aria-label="그림 카테고리"><div id="localCategories" class="category-row" aria-label="자체 제작 도안"></div><div id="externalCategories" class="category-row" aria-label="외부 도안 사이트"></div></nav>
+<div class="tools"><div><button id="selectAll">전체 선택</button><button id="clearAll">전체 선택 해제</button></div><button class="primary" id="printSelected" disabled>선택 출력 <span id="count">0</span></button></div>
+<section id="gallery" aria-label="그림 도안"></section>
+</main>
+</body></html>
