@@ -111,5 +111,5 @@ const imagination=[
 {id:'imagination-19',name:'상상 39',svg:'<path fill="none" d="M75 100 L125 150 L175 100 M245 300 L295 250 L345 300"/>'},
 {id:'imagination-20',name:'상상 40',svg:'<path fill="none" d="M85 180 C85 110 155 100 165 145 C175 185 125 205 115 180 M265 265 L325 265"/>'}
 ];
-globalThis.COLORING_CATEGORIES=[{name:'상상',items:imagination},{name:'동물',items},{name:'음식',items:food},{name:'과일·채소',items:produce},{name:'탈것',items:vehicles},{name:'바다',items:ocean},{name:'공룡',items:dinosaurs},{name:'자연',items:nature},{name:'우리 집',items:home},{name:'놀이·운동',items:play},{name:'우주',items:space}];
+globalThis.COLORING_CATEGORIES=[{name:'상상',items:imagination},{name:'동물',items},{name:'음식',items:food},{name:'과일·채소',items:produce},{name:'탈것',items:vehicles},{name:'바다',items:ocean},{name:'공룡',items:dinosaurs},{name:'자연',items:nature},{name:'우리 집',items:home},{name:'놀이·운동',items:play},{name:'우주',items:space},{name:'제안',items:[]}];
 })();

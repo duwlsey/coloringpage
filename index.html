@@ -6,16 +6,34 @@
 <style>html{background:#faf9f5}.font-loading body{visibility:hidden}</style>
 <script>if(document.fonts)document.documentElement.classList.add('font-loading');</script>
 <link rel="preload" href="fonts/OkDanDan-Bold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=7d31eb599888">
-<script defer src="drawings.js?v=5060ffa25768"></script><script defer src="app.js?v=314662866b2c"></script>
+<link rel="stylesheet" href="style.css?v=49823658453a">
+<script defer src="config.js?v=c4fd80906ce7"></script><script defer src="drawings.js?v=eb1a8f42c891"></script><script defer src="app.js?v=eccd8ab336bf"></script>
 <script defer src="font-ready.js?v=d70a98ee3198"></script>
 </head>
 <body>
 <svg class="texture-defs" xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true"><defs><filter id="crayon-edge" x="-10%" y="-20%" width="120%" height="140%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="2" seed="8" result="grain"/><feDisplacementMap in="SourceGraphic" in2="grain" scale="1.8" xChannelSelector="R" yChannelSelector="G" result="rough"/><feColorMatrix in="grain" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.5 -.15" result="wax"/><feComposite in="rough" in2="wax" operator="in"/></filter></defs></svg>
-<header><h1 class="site-title"><svg class="title-scribble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 110" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#crayon-edge)"><path stroke="#e5a868" d="M12 73 Q4 27 27 31 T54 63 Q33 91 29 61 T71 37 L52 78 L90 23 L84 77"/><path stroke="#df979b" d="M83 55 Q99 12 113 42 T126 80 Q96 86 112 49 T155 37 L143 81 Q157 19 178 34 L163 75"/><path stroke="#91bbaa" d="M177 72 Q162 27 187 28 T218 71 Q186 89 199 48 T244 39 L227 80 L257 25 L253 75"/><path stroke="#a3b9d3" d="M251 68 Q250 17 273 29 T296 72 Q265 91 280 49 T324 39 L309 79 Q332 19 347 35 L336 78"/><path stroke="#c0a6cc" d="M342 65 Q344 15 365 32 T384 76 Q356 84 371 46 T414 36 L400 77 L428 29 L419 76 Q456 10 463 54 L447 80"/></g></svg><span>즐거운 색칠공부</span></h1></header>
+<header><h1 class="site-title"><svg class="title-scribble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 110" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#crayon-edge)"><path stroke="#e5a868" d="M12 73 Q4 27 27 31 T54 63 Q33 91 29 61 T71 37 L52 78 L90 23 L84 77"/><path stroke="#df979b" d="M83 55 Q99 12 113 42 T126 80 Q96 86 112 49 T155 37 L143 81 Q157 19 178 34 L163 75"/><path stroke="#91bbaa" d="M177 72 Q162 27 187 28 T218 71 Q186 89 199 48 T244 39 L227 80 L257 25 L253 75"/><path stroke="#a3b9d3" d="M251 68 Q250 17 273 29 T296 72 Q265 91 280 49 T324 39 L309 79 Q332 19 347 35 L336 78"/><path stroke="#c0a6cc" d="M342 65 Q344 15 365 32 T384 76 Q356 84 371 46 T414 36 L400 77 L428 29 L419 76 Q456 10 463 54 L447 80"/></g></svg><span>즐거운 색칠공부</span></h1><form id="searchForm" role="search"><div class="search-field"><input id="drawingSearch" type="search" aria-label="전체 도안 검색" placeholder="도안 검색" maxlength="100" autocomplete="off"></div><button type="submit">검색</button></form></header>
 <main>
 <nav id="categories" aria-label="그림 카테고리"><div id="localCategories" class="category-row" aria-label="자체 제작 도안"></div><div id="externalCategories" class="category-row" aria-label="외부 도안 사이트"></div></nav>
 <div class="tools"><div><button id="selectAll">전체 선택</button><button id="clearAll">전체 선택 해제</button></div><button class="primary" id="printSelected" disabled>선택 출력 <span id="count">0</span></button></div>
 <section id="gallery" aria-label="그림 도안"></section>
+<p id="emptyResults" hidden>검색한 도안이 없습니다.</p>
+<section id="suggestionArea" hidden aria-label="새 도안 제안">
+<p>매일 오전 8시부터 새로운 도안을 순서대로 업데이트합니다.<br>제안하신 도안은 순서대로 처리됩니다.</p>
+<button id="openSuggestion">새 도안 제안</button>
+</section>
 </main>
+<dialog id="suggestionDialog" aria-labelledby="suggestionHeading">
+<div class="dialog-top"><h2 id="suggestionHeading">새 도안 제안</h2><button id="closeSuggestion" type="button" aria-label="닫기">닫기</button></div>
+<form id="suggestionForm">
+<p>원하는 새 도안을 제안하고 받아보세요!</p>
+<label for="suggestionTitle">도안 제목 (필수)</label><div class="input-shell"><input id="suggestionTitle" name="title" required maxlength="60" autocomplete="off"></div>
+<label for="suggestionDescription">원하는 도안 설명 (필수)</label><div class="input-shell"><textarea id="suggestionDescription" name="description" required maxlength="1500" rows="4"></textarea></div>
+<label class="consent"><input id="notifyConsent" type="checkbox" name="notify">업데이트 알림 신청 (선택)</label>
+<p class="privacy-note">이메일 주소는 도안 완성 알림에만 사용하며, 알림 메일 전송 후 접수 저장소에서 삭제됩니다. 전송하지 못한 주소도 접수 후 90일 이내 삭제됩니다.</p>
+<label for="notificationEmail">메일 주소</label><div class="input-shell"><input id="notificationEmail" name="email" type="email" maxlength="254" autocomplete="email" disabled></div>
+<div class="honeypot" aria-hidden="true"><label for="suggestionWebsite">Website</label><input id="suggestionWebsite" name="website" tabindex="-1" autocomplete="off"></div>
+<p id="suggestionStatus" role="status" aria-live="polite"></p><button id="submitSuggestion" type="submit" class="primary">제출</button>
+</form>
+</dialog>
 </body></html>
