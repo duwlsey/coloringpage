@@ -133,7 +133,9 @@ function notify_(id) {
     if(MailApp.getRemainingDailyQuota()<1)return {ok:true,mail:'발송 한도 대기'};
     // Persist before send. A crash leaves '전송 중' for manual review, never automatic duplicate send.
     r[3]='전송 중';rawWrite_(contacts,index+2,r);SpreadsheetApp.flush();
-    try{MailApp.sendEmail({to:r[1],subject:'🎨즐거운 색칠공부🎨 신청하신 도안이 나왔습니다!',body:'안녕하세요? 제안해주신 "'+request[2]+'" 도안을 완성했습니다🧑‍🎨\n사이트로 이동하여 확인해보세요🌟\n'+SITE,name:'즐거운 색칠공부'});}
+    const title=String(request[2]);
+    const htmlTitle=title.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    try{MailApp.sendEmail({to:r[1],subject:'🎨 즐거운 색칠공부 🎨 도안 알림 🎨',body:'안녕하세요?\n\n제안해주신 "'+title+'" 도안을 완성했습니다 🧑‍🎨\n사이트로 이동하여 확인해보세요 🌟\n\n'+SITE,htmlBody:'<div style="font-family:sans-serif;line-height:1.7;color:#141413"><p>안녕하세요?</p><p>제안해주신 &quot;'+htmlTitle+'&quot; 도안을 완성했습니다 🧑‍🎨<br>사이트로 이동하여 확인해보세요 🌟</p><p><a href="'+SITE+'" target="_blank" rel="noopener noreferrer">'+SITE+'</a></p></div>',name:'즐거운 색칠공부'});}
     catch(_){r[3]='발송 확인 필요';rawWrite_(contacts,index+2,r);return {ok:true,mail:'발송 확인 필요'};}
     // Never rewrite the address after sending.
     contacts.getRange(index+2,2).clearContent();contacts.getRange(index+2,4).setValue('발송 완료');

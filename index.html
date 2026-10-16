@@ -6,8 +6,8 @@
 <style>html{background:#faf9f5}.font-loading body{visibility:hidden}</style>
 <script>if(document.fonts)document.documentElement.classList.add('font-loading');</script>
 <link rel="preload" href="fonts/OkDanDan-Bold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=49823658453a">
-<script defer src="config.js?v=39f3241f9eb0"></script><script defer src="drawings.js?v=d9f31ad9e045"></script><script defer src="app.js?v=eccd8ab336bf"></script>
+<link rel="stylesheet" href="style.css?v=476c3783eef6">
+<script defer src="config.js?v=39f3241f9eb0"></script><script defer src="drawings.js?v=d9f31ad9e045"></script><script defer src="app.js?v=512471d40abf"></script>
 <script defer src="font-ready.js?v=d70a98ee3198"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
 <section id="gallery" aria-label="그림 도안"></section>
 <p id="emptyResults" hidden>검색한 도안이 없습니다.</p>
 <section id="suggestionArea" hidden aria-label="새 도안 제안">
-<p>매일 오전 8시부터 새로운 도안을 순서대로 업데이트합니다.<br>제안하신 도안은 순서대로 처리됩니다.</p>
+<p>매일 오전 8시에 새로운 도안을 순서대로 업데이트합니다.</p>
 <button id="openSuggestion">새 도안 제안</button>
 </section>
 </main>
@@ -29,7 +29,7 @@
 <p>원하는 새 도안을 제안하고 받아보세요!</p>
 <label for="suggestionTitle">도안 제목 (필수)</label><div class="input-shell"><input id="suggestionTitle" name="title" required maxlength="60" autocomplete="off"></div>
 <label for="suggestionDescription">원하는 도안 설명 (필수)</label><div class="input-shell"><textarea id="suggestionDescription" name="description" required maxlength="1500" rows="4"></textarea></div>
-<label class="consent"><input id="notifyConsent" type="checkbox" name="notify">업데이트 알림 신청 (선택)</label>
+<label class="consent"><span class="consent-control"><input id="notifyConsent" type="checkbox" name="notify"><span class="consent-mark" aria-hidden="true"></span></span><span>업데이트 알림 신청 (선택)</span></label>
 <p class="privacy-note">이메일 주소는 도안 완성 알림에만 사용하며, 알림 메일 전송 후 접수 저장소에서 삭제됩니다. 전송하지 못한 주소도 접수 후 90일 이내 삭제됩니다.</p>
 <label for="notificationEmail">메일 주소</label><div class="input-shell"><input id="notificationEmail" name="email" type="email" maxlength="254" autocomplete="email" disabled></div>
 <div class="honeypot" aria-hidden="true"><label for="suggestionWebsite">Website</label><input id="suggestionWebsite" name="website" tabindex="-1" autocomplete="off"></div>
