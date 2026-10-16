@@ -2,7 +2,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+// Use Windows' native certificate trust without disabling TLS verification.
+if(process.platform==='win32'){
+const run=spawnSync('pwsh',['-NoProfile','-File',path.join(root,'scripts/suggestion-worker.ps1'),...process.argv.slice(2)],{stdio:'inherit',windowsHide:true});
+process.exit(run.status??1);
+}
 const text=fs.existsSync(path.join(root,'.env.local'))?fs.readFileSync(path.join(root,'.env.local'),'utf8'):'';
 const key=text.match(/^COLORING_WORKER_KEY=(.+)$/m)?.[1].trim();
 const context={};vm.createContext(context);vm.runInContext(fs.readFileSync(path.join(root,'config.js'),'utf8'),context);
