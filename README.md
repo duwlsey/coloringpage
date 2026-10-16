@@ -10,6 +10,8 @@ Settings → Pages → Build and deployment에서 **Deploy from a branch**를 �
 
 `drawings.js`의 해당 카테고리에 한국어 이름과 이미지 경로를 추가하고, 이미지 파일을 `images/` 폴더에 저장합니다. 상상 도안은 미완성 SVG 선으로 구성됩니다. 제작 지침과 현재 목록은 `DRAWING-WORKFLOW.md`에 있습니다.
 
+화면에는 `thumbnails/`의 최대 480px WebP 미리보기를 지연 로딩합니다. 새 도안을 추가할 때 `thumbnail` 경로도 함께 지정합니다. 출력에는 `images/`의 고해상도 원본을 사용합니다.
+
 ## 글꼴과 출력
 
 제공된 OkDanDan-Bold 글꼴을 웹용 WOFF2로 변환해 포함했습니다. 글꼴이 준비된 뒤 화면을 표시해 처음 접속하거나 새로고침할 때 글꼴이 바뀌는 현상을 방지합니다.
