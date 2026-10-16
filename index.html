@@ -6,8 +6,8 @@
 <style>html{background:#faf9f5}.font-loading body{visibility:hidden}</style>
 <script>if(document.fonts)document.documentElement.classList.add('font-loading');</script>
 <link rel="preload" href="fonts/OkDanDan-Bold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=1237b19ad22c">
-<script defer src="config.js?v=39f3241f9eb0"></script><script defer src="drawings.js?v=d9f31ad9e045"></script><script defer src="app.js?v=512471d40abf"></script>
+<link rel="stylesheet" href="style.css?v=a55a2c82d55e">
+<script defer src="config.js?v=39f3241f9eb0"></script><script defer src="drawings.js?v=d9f31ad9e045"></script><script defer src="app.js?v=e1f5464b2ec2"></script>
 <script defer src="font-ready.js?v=d70a98ee3198"></script>
 </head>
 <body>
@@ -36,6 +36,11 @@
 <div class="honeypot" aria-hidden="true"><label for="suggestionWebsite">Website</label><input id="suggestionWebsite" name="website" tabindex="-1" autocomplete="off"></div>
 <p id="suggestionStatus" role="status" aria-live="polite"></p><button id="submitSuggestion" type="submit" class="primary">제출</button>
 </form>
+<section id="suggestionComplete" hidden aria-live="polite">
+<h2 id="suggestionCompleteHeading">제안이 접수되었습니다.</h2>
+<p id="suggestionCompleteEstimate"></p>
+<p id="suggestionCompleteDate"></p>
+</section>
 </div>
 </dialog>
 </body></html>

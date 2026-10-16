@@ -34,7 +34,7 @@ externalSites.forEach(([name,url])=>{const link=document.createElement('a');link
 $('selectAll').onclick=()=>{visibleItems().forEach(item=>selected.add(item.id));sync()};$('clearAll').onclick=()=>{selected.clear();sync()};$('printSelected').onclick=()=>printItems([...selected].map(id=>all.get(id)));render();
 $('searchForm').onsubmit=event=>{event.preventDefault();query=$('drawingSearch').value.trim().normalize('NFKC').toLocaleLowerCase('ko');render()};
 $('drawingSearch').oninput=()=>{if(!$('drawingSearch').value){query='';render()}};
-$('openSuggestion').onclick=()=>{const ready=!!globalThis.COLORING_CONFIG?.suggestionEndpoint;$('suggestionStatus').textContent=ready?'':'제안 접수를 준비 중입니다.';$('submitSuggestion').disabled=!ready;$('suggestionDialog').showModal()};
+$('openSuggestion').onclick=()=>{const ready=!!globalThis.COLORING_CONFIG?.suggestionEndpoint;$('suggestionForm').hidden=false;$('suggestionComplete').hidden=true;$('suggestionHeading').hidden=false;$('suggestionDialog').classList.toggle('is-complete',false);$('suggestionDialog').setAttribute('aria-labelledby','suggestionHeading');$('suggestionStatus').textContent=ready?'':'제안 접수를 준비 중입니다.';$('submitSuggestion').disabled=!ready;$('suggestionDialog').showModal()};
 $('closeSuggestion').onclick=()=>$('suggestionDialog').close();
 $('notifyConsent').onchange=()=>{const enabled=$('notifyConsent').checked;$('notificationEmail').disabled=!enabled;$('notificationEmail').required=enabled;if(!enabled)$('notificationEmail').value=''};
 $('suggestionForm').onsubmit=async event=>{
@@ -43,8 +43,10 @@ if(!endpoint){status.textContent='아직 제안 접수를 준비 중입니다. �
 const button=$('submitSuggestion');button.disabled=true;
 try{const form=$('suggestionForm');const payload={title:$('suggestionTitle').value.trim(),description:$('suggestionDescription').value.trim(),notify:$('notifyConsent').checked,email:$('notifyConsent').checked?$('notificationEmail').value.trim():null,website:$('suggestionWebsite').value,requestId:form.dataset.requestId||(form.dataset.requestId=crypto.randomUUID())};
 const result=await submitSuggestion(endpoint,payload);
-status.textContent=`제안이 접수되었습니다. 약 ${result.days}일 후 도안이 업데이트될 예정입니다. 예상 업데이트: ${result.date} 오전 8시 이후`;
 form.reset();delete form.dataset.requestId;$('notificationEmail').disabled=true;$('notificationEmail').required=false;
+$('suggestionCompleteEstimate').textContent=`약 ${result.days}일 후 도안이 업데이트될 예정입니다.`;
+$('suggestionCompleteDate').textContent=`예상 업데이트: ${result.date} 오전 8시 이후`;
+form.hidden=true;$('suggestionHeading').hidden=true;$('suggestionComplete').hidden=false;$('suggestionDialog').classList.toggle('is-complete',true);$('suggestionDialog').setAttribute('aria-labelledby','suggestionCompleteHeading');$('suggestionDialog').querySelector('.dialog-scroll').scrollTop=0;$('closeSuggestion').focus?.();
 }catch(error){status.textContent=error.name==='TimeoutError'?'접수 확인이 지연되고 있습니다. 같은 내용으로 다시 제출해 주세요.':error.message}finally{button.disabled=false}};
 globalThis.addEventListener?.('pageshow',event=>{if(event.persisted){selected.clear();active=0;render()}});
 })();

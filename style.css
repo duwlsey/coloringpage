@@ -25,3 +25,4 @@ header{display:flex;align-items:center;justify-content:space-between;gap:24px}.s
 @media(hover:hover){#localCategories button.proposal-category:hover{background:var(--proposal-bg)}.consent:hover .consent-mark{background:var(--card)}}
 @media(max-width:700px){#suggestionArea{gap:12px}#openSuggestion{font-size:17px;padding:9px 10px}}
 dialog{padding:0;overflow:visible}.dialog-scroll{max-height:calc(100dvh - 46px);overflow-y:auto;padding:28px;border-radius:12px}@media(max-width:700px){.dialog-scroll{padding:20px}}
+.is-complete .dialog-top{justify-content:flex-end}#suggestionComplete{padding:8px 0 18px}#suggestionComplete h2{font-size:24px;line-height:1.6;margin:0 0 20px}#suggestionComplete p{font-size:20px;line-height:1.7;margin:0 0 16px}#suggestionComplete p:last-child{margin-bottom:0}
