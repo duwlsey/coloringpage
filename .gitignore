@@ -3,3 +3,4 @@
 !.env.example
 *.credentials.json
 node_modules/
+.proposal-delete-result.json

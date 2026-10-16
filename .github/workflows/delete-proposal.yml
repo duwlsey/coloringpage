@@ -1,0 +1,84 @@
+name: Delete selected proposal
+run-name: ${{ github.event_name == 'workflow_dispatch' && format('Delete proposal {0} / {1}', inputs.request_id, inputs.operation_id) || 'Check proposal deletion safeguards' }}
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/delete-proposal*', 'scripts/verify-proposal-deletion.mjs', 'backend/SheetDeletionMenu*', '.github/workflows/delete-proposal.yml']
+  workflow_dispatch:
+    inputs:
+      request_id:
+        description: Exact proposal request UUID
+        required: true
+        type: string
+      dry_run:
+        description: Run safeguard tests without deleting or deploying
+        default: false
+        type: boolean
+      operation_id:
+        description: Unique ID of this deletion operation
+        required: true
+        type: string
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: coloringpage-proposal-deletion
+  cancel-in-progress: false
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify deletion safeguards
+        run: |
+          node scripts/delete-proposal.test.mjs
+          node backend/SheetDeletionMenu.test.cjs
+      - name: Remove exactly the selected proposal
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.dry_run }}
+        env:
+          REQUEST_ID: ${{ inputs.request_id }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: node scripts/delete-proposal.mjs
+      - name: Refresh asset versions
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.dry_run }}
+        run: node scripts/version-assets.mjs
+      - name: Commit deletion without force push
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.dry_run }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- drawings.js index.html deleted-proposals.json
+          git add -u -- images thumbnails
+          if ! git diff --cached --quiet; then
+            git commit -m 'Remove selected proposal drawing'
+            git push origin HEAD:main
+          fi
+      - name: Request Pages build using the existing publishing source
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.dry_run }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" > /dev/null
+      - name: Confirm Pages build succeeded
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.dry_run }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          expected=$(git rev-parse HEAD)
+          for attempt in $(seq 1 50); do
+            build=$(gh api "repos/$GITHUB_REPOSITORY/pages/builds?per_page=10")
+            state=$(printf '%s' "$build" | jq -r --arg sha "$expected" '[.[] | select(.commit==$sha)][0].status // "pending"')
+            if [ "$state" = built ]; then exit 0; fi
+            if [ "$state" = errored ]; then exit 1; fi
+            sleep 10
+          done
+          exit 1
+      - name: Verify live catalog and removed image URLs
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.dry_run }}
+        run: node scripts/verify-proposal-deletion.mjs
