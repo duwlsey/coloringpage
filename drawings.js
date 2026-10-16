@@ -79,7 +79,17 @@ const imagination=[
 {id:'imagination-07',name:'상상 07',svg:'<path fill="none" d="M145 180 L145 245 Q145 260 160 260 L235 260"/>'},
 {id:'imagination-08',name:'상상 08',svg:'<path fill="none" d="M200 190 C180 165 155 195 176 213 C210 243 250 197 224 165 C197 132 150 147 132 175"/>'},
 {id:'imagination-09',name:'상상 09',svg:'<path fill="none" d="M105 100 L105 195 M285 200 L285 295"/>'},
-{id:'imagination-10',name:'상상 10',svg:'<path fill="none" d="M70 235 L125 135 M260 120 L320 220 M250 310 L140 310"/>'}
+{id:'imagination-10',name:'상상 10',svg:'<path fill="none" d="M70 235 L125 135 M260 120 L320 220 M250 310 L140 310"/>'},
+{id:'imagination-11',name:'상상 11',svg:'<path fill="none" d="M80 220 C55 145 100 90 165 85 M235 310 C290 300 330 260 330 205"/>'},
+{id:'imagination-12',name:'상상 12',svg:'<path fill="none" d="M85 170 L85 90 L165 90 M235 310 L315 310 L315 230"/>'},
+{id:'imagination-13',name:'상상 13',svg:'<path fill="none" d="M75 105 L170 105 M230 205 L325 205 M95 310 L190 310"/>'},
+{id:'imagination-14',name:'상상 14',svg:'<path fill="none" d="M145 265 C90 215 140 165 200 105 C230 145 265 180 260 215"/>'},
+{id:'imagination-15',name:'상상 15',svg:'<path fill="none" d="M115 155 C75 205 125 260 200 260 C275 260 315 205 280 155"/>'},
+{id:'imagination-16',name:'상상 16',svg:'<g fill="black" stroke="none"><circle cx="80" cy="105" r="5"/><circle cx="290" cy="80" r="5"/><circle cx="120" cy="300" r="5"/><circle cx="315" cy="275" r="5"/></g>'},
+{id:'imagination-17',name:'상상 17',svg:'<path fill="none" d="M100 275 L100 215 L165 215 L165 150 L230 150 L230 85"/>'},
+{id:'imagination-18',name:'상상 18',svg:'<path fill="none" d="M70 180 C70 105 160 105 160 180"/><circle cx="295" cy="285" r="5" fill="black" stroke="none"/>'},
+{id:'imagination-19',name:'상상 19',svg:'<path fill="none" d="M75 100 L125 150 L175 100 M245 300 L295 250 L345 300"/>'},
+{id:'imagination-20',name:'상상 20',svg:'<path fill="none" d="M85 180 C85 110 155 100 165 145 C175 185 125 205 115 180 M265 265 L325 265"/>'}
 ];
 globalThis.COLORING_CATEGORIES=[{name:'상상',items:imagination},{name:'동물',items},{name:'음식',items:food},{name:'과일·채소',items:produce},{name:'탈것',items:vehicles},{name:'바다',items:ocean},{name:'공룡',items:dinosaurs},{name:'자연',items:nature},{name:'우리 집',items:home},{name:'놀이·운동',items:play},{name:'우주',items:space}];
 })();
