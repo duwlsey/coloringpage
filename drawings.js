@@ -109,7 +109,15 @@ const imagination=[
 {id:'imagination-17',name:'상상 37',svg:'<path fill="none" d="M100 275 L100 215 L165 215 L165 150 L230 150 L230 85"/>'},
 {id:'imagination-18',name:'상상 38',svg:'<path fill="none" d="M70 180 C70 105 160 105 160 180"/><circle cx="295" cy="285" r="5" fill="black" stroke="none"/>'},
 {id:'imagination-19',name:'상상 39',svg:'<path fill="none" d="M75 100 L125 150 L175 100 M245 300 L295 250 L345 300"/>'},
-{id:'imagination-20',name:'상상 40',svg:'<path fill="none" d="M85 180 C85 110 155 100 165 145 C175 185 125 205 115 180 M265 265 L325 265"/>'}
+{id:'imagination-20',name:'상상 40',svg:'<path fill="none" d="M85 180 C85 110 155 100 165 145 C175 185 125 205 115 180 M265 265 L325 265"/>'},
+{id:'imagination-weekly-20261019-41',name:'상상 41',svg:'<path fill="none" d="M85 265 C170 300 110 165 200 175 S285 100 315 125"/>'},
+{id:'imagination-weekly-20261019-42',name:'상상 42',svg:'<path fill="none" d="M85 215 A130 130 0 0 1 215 85 M155 215 A60 60 0 0 1 215 155"/>'},
+{id:'imagination-weekly-20261019-43',name:'상상 43',svg:'<path fill="none" d="M85 115 L145 175 M285 95 L255 175 M290 300 L215 265"/>'},
+{id:'imagination-weekly-20261019-44',name:'상상 44',svg:'<path fill="none" d="M90 235 Q175 255 205 190 Q225 130 305 120 M205 190 L220 285"/>'},
+{id:'imagination-weekly-20261019-45',name:'상상 45',svg:'<path fill="none" d="M100 100 L150 160 L100 200 M230 300 Q315 300 315 215"/>'}
 ];
-globalThis.COLORING_CATEGORIES=[{name:'상상',items:imagination},{name:'동물',items},{name:'음식',items:food},{name:'과일·채소',items:produce},{name:'탈것',items:vehicles},{name:'바다',items:ocean},{name:'공룡',items:dinosaurs},{name:'자연',items:nature},{name:'우리 집',items:home},{name:'놀이·운동',items:play},{name:'우주',items:space},{name:'제안',items:[]}];
+globalThis.COLORING_CATEGORIES=[{name:'상상',items:imagination},{name:'동물',items},{name:'음식',items:food},{name:'과일·채소',items:produce},{name:'탈것',items:vehicles},{name:'바다',items:ocean},{name:'공룡',items:dinosaurs},{name:'자연',items:nature},{name:'우리 집',items:home},{name:'놀이·운동',items:play},{name:'우주',items:space},{name:'제안',items:[
+{id:'suggestion-96e0f117-1357-4e77-8957-65447cd23205',name:'시소',image:'images/proposals/seesaw-96e0f117.png',thumbnail:'thumbnails/proposals/seesaw-96e0f117.webp',tags:["시소","놀이터","놀이기구"]},
+{id:'suggestion-b9b46922-2cd7-4510-b36a-f2e446767fb7',name:'그네',image:'images/proposals/swing-b9b46922.png',thumbnail:'thumbnails/proposals/swing-b9b46922.webp',tags:["그네","놀이터","놀이기구"]}
+]}];
 })();
