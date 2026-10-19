@@ -4,7 +4,8 @@ const items=[
 {name:'토끼',image:'images/animals/rabbit.png',thumbnail:'thumbnails/animals/rabbit.webp'},
 {name:'강아지',image:'images/animals/puppy.png',thumbnail:'thumbnails/animals/puppy.webp'},
 {name:'코끼리',image:'images/animals/elephant.png',thumbnail:'thumbnails/animals/elephant.webp'},
-{name:'곰',image:'images/animals/bear.png',thumbnail:'thumbnails/animals/bear.webp'}
+{name:'곰',image:'images/animals/bear.png',thumbnail:'thumbnails/animals/bear.webp'},
+{id:'animals-weekly-20261020-penguin',name:'펭귄',image:'images/animals/penguin-20261020.png',thumbnail:'thumbnails/animals/penguin-20261020.webp'}
 ];
 const food=[
 {name:'도넛',image:'images/food/donut.png',thumbnail:'thumbnails/food/donut.webp'},
