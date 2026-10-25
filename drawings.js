@@ -52,28 +52,32 @@ const nature=[
 {name:'튤립',image:'images/nature/tulip.png',thumbnail:'thumbnails/nature/tulip.webp'},
 {name:'참나무',image:'images/nature/oak-tree.png',thumbnail:'thumbnails/nature/oak-tree.webp'},
 {name:'소나무',image:'images/nature/pine-tree.png',thumbnail:'thumbnails/nature/pine-tree.webp'},
-{name:'버섯',image:'images/nature/mushroom.png',thumbnail:'thumbnails/nature/mushroom.webp'}
+{name:'버섯',image:'images/nature/mushroom.png',thumbnail:'thumbnails/nature/mushroom.webp'},
+{id:'nature-weekly-20261024-maple-leaf',name:'단풍잎',image:'images/nature/maple-leaf-20261024.png',thumbnail:'thumbnails/nature/maple-leaf-20261024.webp'}
 ];
 const home=[
 {name:'의자',image:'images/home/chair.png',thumbnail:'thumbnails/home/chair.webp'},
 {name:'소파',image:'images/home/sofa.png',thumbnail:'thumbnails/home/sofa.webp'},
 {name:'침대',image:'images/home/bed.png',thumbnail:'thumbnails/home/bed.webp'},
 {name:'옷장',image:'images/home/wardrobe.png',thumbnail:'thumbnails/home/wardrobe.webp'},
-{name:'탁상등',image:'images/home/table-lamp.png',thumbnail:'thumbnails/home/table-lamp.webp'}
+{name:'탁상등',image:'images/home/table-lamp.png',thumbnail:'thumbnails/home/table-lamp.webp'},
+{id:'home-weekly-20261024-kettle',name:'주전자',image:'images/home/kettle-20261024.png',thumbnail:'thumbnails/home/kettle-20261024.webp'}
 ];
 const play=[
 {name:'축구공',image:'images/play/soccer-ball.png',thumbnail:'thumbnails/play/soccer-ball.webp'},
 {name:'농구공',image:'images/play/basketball.png',thumbnail:'thumbnails/play/basketball.webp'},
 {name:'야구 글러브',image:'images/play/baseball-glove.png',thumbnail:'thumbnails/play/baseball-glove.webp'},
 {name:'테니스 라켓',image:'images/play/tennis-racket.png',thumbnail:'thumbnails/play/tennis-racket.webp'},
-{name:'스케이트보드',image:'images/play/skateboard.png',thumbnail:'thumbnails/play/skateboard.webp'}
+{name:'스케이트보드',image:'images/play/skateboard.png',thumbnail:'thumbnails/play/skateboard.webp'},
+{id:'play-weekly-20261025-bowling-pin',name:'볼링핀',image:'images/play/bowling-pin-20261025.png',thumbnail:'thumbnails/play/bowling-pin-20261025.webp'}
 ];
 const space=[
 {name:'로켓',image:'images/space/rocket.png',thumbnail:'thumbnails/space/rocket.webp'},
 {name:'우주비행사',image:'images/space/astronaut.png',thumbnail:'thumbnails/space/astronaut.webp'},
 {name:'인공위성',image:'images/space/satellite.png',thumbnail:'thumbnails/space/satellite.webp'},
 {name:'달 탐사차',image:'images/space/lunar-rover.png',thumbnail:'thumbnails/space/lunar-rover.webp'},
-{name:'토성',image:'images/space/saturn.png',thumbnail:'thumbnails/space/saturn.webp'}
+{name:'토성',image:'images/space/saturn.png',thumbnail:'thumbnails/space/saturn.webp'},
+{id:'space-weekly-20261025-space-telescope',name:'우주 망원경',image:'images/space/space-telescope-20261025.png',thumbnail:'thumbnails/space/space-telescope-20261025.webp'}
 ];
 const imagination=[
 {id:'imagination-basic-circle',name:'상상 1',svg:'<circle cx="200" cy="200" r="95"/>'},
