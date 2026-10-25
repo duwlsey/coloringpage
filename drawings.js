@@ -124,7 +124,12 @@ const imagination=[
 {id:'imagination-weekly-20261019-42',name:'상상 42',svg:'<path fill="none" d="M85 215 A130 130 0 0 1 215 85 M155 215 A60 60 0 0 1 215 155"/>'},
 {id:'imagination-weekly-20261019-43',name:'상상 43',svg:'<path fill="none" d="M85 115 L145 175 M285 95 L255 175 M290 300 L215 265"/>'},
 {id:'imagination-weekly-20261019-44',name:'상상 44',svg:'<path fill="none" d="M90 235 Q175 255 205 190 Q225 130 305 120 M205 190 L220 285"/>'},
-{id:'imagination-weekly-20261019-45',name:'상상 45',svg:'<path fill="none" d="M100 100 L150 160 L100 200 M230 300 Q315 300 315 215"/>'}
+{id:'imagination-weekly-20261019-45',name:'상상 45',svg:'<path fill="none" d="M100 100 L150 160 L100 200 M230 300 Q315 300 315 215"/>'},
+{id:'imagination-weekly-20261026-46',name:'상상 46',svg:'<path fill="none" d="M75 125 Q135 65 170 135 T260 145 M105 290 L175 265"/>'},
+{id:'imagination-weekly-20261026-47',name:'상상 47',svg:'<path fill="none" d="M90 90 L155 90 Q190 90 190 130 L190 165 M290 245 L290 310 L220 310"/>'},
+{id:'imagination-weekly-20261026-48',name:'상상 48',svg:'<path fill="none" d="M90 140 Q130 75 205 95 M290 155 Q340 235 270 285 M170 310 L105 270"/>'},
+{id:'imagination-weekly-20261026-49',name:'상상 49',svg:'<circle cx="95" cy="95" r="5" fill="black" stroke="none"/><circle cx="290" cy="125" r="5" fill="black" stroke="none"/><path fill="none" d="M85 285 Q145 235 205 275"/>'},
+{id:'imagination-weekly-20261026-50',name:'상상 50',svg:'<path fill="none" d="M85 100 L140 155 L105 205 M235 95 Q310 150 260 215 L310 285"/>'}
 ];
 globalThis.COLORING_CATEGORIES=[{name:'상상',items:imagination},{name:'동물',items},{name:'음식',items:food},{name:'과일·채소',items:produce},{name:'탈것',items:vehicles},{name:'바다',items:ocean},{name:'공룡',items:dinosaurs},{name:'자연',items:nature},{name:'우리 집',items:home},{name:'놀이·운동',items:play},{name:'우주',items:space},{name:'제안',items:[
 {id:'suggestion-96e0f117-1357-4e77-8957-65447cd23205',name:'시소',image:'images/proposals/seesaw-96e0f117.png',thumbnail:'thumbnails/proposals/seesaw-96e0f117.webp',tags:["시소","놀이터","놀이기구"]},
