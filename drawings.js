@@ -23,7 +23,8 @@ const produce=[
 {name:'딸기',image:'images/produce/strawberry.png',thumbnail:'thumbnails/produce/strawberry.webp'},
 {name:'당근',image:'images/produce/carrot.png',thumbnail:'thumbnails/produce/carrot.webp'},
 {name:'브로콜리',image:'images/produce/broccoli.png',thumbnail:'thumbnails/produce/broccoli.webp'},
-{id:'produce-weekly-20261022-pumpkin',name:'호박',image:'images/produce/pumpkin-20261022.png',thumbnail:'thumbnails/produce/pumpkin-20261022.webp'}
+{id:'produce-weekly-20261022-pumpkin',name:'호박',image:'images/produce/pumpkin-20261022.png',thumbnail:'thumbnails/produce/pumpkin-20261022.webp'},
+{id:'produce-weekly-20261029-bell-pepper',name:'파프리카',image:'images/produce/bell-pepper-20261029.png',thumbnail:'thumbnails/produce/bell-pepper-20261029.webp'}
 ];
 const vehicles=[
 {name:'자동차',image:'images/vehicles/car.png',thumbnail:'thumbnails/vehicles/car.webp'},
@@ -31,7 +32,8 @@ const vehicles=[
 {name:'기차',image:'images/vehicles/train.png',thumbnail:'thumbnails/vehicles/train.webp'},
 {name:'비행기',image:'images/vehicles/airplane.png',thumbnail:'thumbnails/vehicles/airplane.webp'},
 {name:'배',image:'images/vehicles/boat.png',thumbnail:'thumbnails/vehicles/boat.webp'},
-{id:'vehicles-weekly-20261022-pickup-truck',name:'트럭',image:'images/vehicles/pickup-truck-20261022.png',thumbnail:'thumbnails/vehicles/pickup-truck-20261022.webp'}
+{id:'vehicles-weekly-20261022-pickup-truck',name:'트럭',image:'images/vehicles/pickup-truck-20261022.png',thumbnail:'thumbnails/vehicles/pickup-truck-20261022.webp'},
+{id:'vehicles-weekly-20261029-hot-air-balloon',name:'열기구',image:'images/vehicles/hot-air-balloon-20261029.png',thumbnail:'thumbnails/vehicles/hot-air-balloon-20261029.webp'}
 ];
 const ocean=[
 {name:'고래',image:'images/ocean/whale.png',thumbnail:'thumbnails/ocean/whale.webp'},
