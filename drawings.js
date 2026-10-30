@@ -41,7 +41,8 @@ const ocean=[
 {name:'문어',image:'images/ocean/octopus.png',thumbnail:'thumbnails/ocean/octopus.webp'},
 {name:'바다거북',image:'images/ocean/sea-turtle.png',thumbnail:'thumbnails/ocean/sea-turtle.webp'},
 {name:'불가사리',image:'images/ocean/starfish.png',thumbnail:'thumbnails/ocean/starfish.webp'},
-{id:'ocean-weekly-20261023-seahorse',name:'해마',image:'images/ocean/seahorse-20261023.png',thumbnail:'thumbnails/ocean/seahorse-20261023.webp'}
+{id:'ocean-weekly-20261023-seahorse',name:'해마',image:'images/ocean/seahorse-20261023.png',thumbnail:'thumbnails/ocean/seahorse-20261023.webp'},
+{"id":"ocean-weekly-20261030-stingray","name":"가오리","image":"images/ocean/stingray-20261030.png","thumbnail":"thumbnails/ocean/stingray-20261030.webp"}
 ];
 const dinosaurs=[
 {name:'티라노사우루스',image:'images/dinosaurs/tyrannosaurus.png',thumbnail:'thumbnails/dinosaurs/tyrannosaurus.webp'},
@@ -49,7 +50,8 @@ const dinosaurs=[
 {name:'브라키오사우루스',image:'images/dinosaurs/brachiosaurus.png',thumbnail:'thumbnails/dinosaurs/brachiosaurus.webp'},
 {name:'스테고사우루스',image:'images/dinosaurs/stegosaurus.png',thumbnail:'thumbnails/dinosaurs/stegosaurus.webp'},
 {name:'안킬로사우루스',image:'images/dinosaurs/ankylosaurus.png',thumbnail:'thumbnails/dinosaurs/ankylosaurus.webp'},
-{id:'dinosaurs-weekly-20261023-parasaurolophus',name:'파라사우롤로푸스',image:'images/dinosaurs/parasaurolophus-20261023.png',thumbnail:'thumbnails/dinosaurs/parasaurolophus-20261023.webp'}
+{id:'dinosaurs-weekly-20261023-parasaurolophus',name:'파라사우롤로푸스',image:'images/dinosaurs/parasaurolophus-20261023.png',thumbnail:'thumbnails/dinosaurs/parasaurolophus-20261023.webp'},
+{"id":"dinosaurs-weekly-20261030-pachycephalosaurus","name":"파키케팔로사우루스","image":"images/dinosaurs/pachycephalosaurus-20261030.png","thumbnail":"thumbnails/dinosaurs/pachycephalosaurus-20261030.webp"}
 ];
 const nature=[
 {name:'해바라기',image:'images/nature/sunflower.png',thumbnail:'thumbnails/nature/sunflower.webp'},
