@@ -16,7 +16,8 @@ const food=[
 {name:'피자 한 조각',image:'images/food/pizza-slice.png',thumbnail:'thumbnails/food/pizza-slice.webp'},
 {name:'아이스크림',image:'images/food/ice-cream.png',thumbnail:'thumbnails/food/ice-cream.webp'},
 {id:'food-weekly-20261021-bread',name:'빵',image:'images/food/bread-20261021.png',thumbnail:'thumbnails/food/bread-20261021.webp'},
-{id:'food-weekly-20261028-sandwich',name:'샌드위치',image:'images/food/sandwich-20261028.png',thumbnail:'thumbnails/food/sandwich-20261028.webp'}
+{id:'food-weekly-20261028-sandwich',name:'샌드위치',image:'images/food/sandwich-20261028.png',thumbnail:'thumbnails/food/sandwich-20261028.webp'},
+{"id":"food-weekly-20261104-croissant","name":"크루아상","image":"images/food/croissant-20261104.png","thumbnail":"thumbnails/food/croissant-20261104.webp"}
 ];
 const produce=[
 {name:'사과',image:'images/produce/apple.png',thumbnail:'thumbnails/produce/apple.webp'},
