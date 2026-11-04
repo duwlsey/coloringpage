@@ -27,7 +27,7 @@ const produce=[
 {name:'브로콜리',image:'images/produce/broccoli.png',thumbnail:'thumbnails/produce/broccoli.webp'},
 {id:'produce-weekly-20261022-pumpkin',name:'호박',image:'images/produce/pumpkin-20261022.png',thumbnail:'thumbnails/produce/pumpkin-20261022.webp'},
 {id:'produce-weekly-20261029-bell-pepper',name:'파프리카',image:'images/produce/bell-pepper-20261029.png',thumbnail:'thumbnails/produce/bell-pepper-20261029.webp'},
-{"id":"produce-weekly-20261105-eggplant","name":"가지","image":"images/produce/eggplant-20261105.png","thumbnail":"thumbnails/produce/eggplant-20261105.webp"}
+{"id":"produce-weekly-20261105-eggplant","name":"가지","image":"images/produce/eggplant-20261105-v2.png","thumbnail":"thumbnails/produce/eggplant-20261105-v2.webp"}
 ];
 const vehicles=[
 {name:'자동차',image:'images/vehicles/car.png',thumbnail:'thumbnails/vehicles/car.webp'},
