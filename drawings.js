@@ -7,7 +7,7 @@ const items=[
 {name:'곰',image:'images/animals/bear.png',thumbnail:'thumbnails/animals/bear.webp'},
 {id:'animals-weekly-20261020-penguin',name:'펭귄',image:'images/animals/penguin-20261020.png',thumbnail:'thumbnails/animals/penguin-20261020.webp'},
 {id:'animals-weekly-20261027-squirrel',name:'다람쥐',image:'images/animals/squirrel-20261027.png',thumbnail:'thumbnails/animals/squirrel-20261027.webp'},
-{"id":"animals-weekly-20261103-hamster","name":"햄스터","image":"images/animals/hamster-20261103.png","thumbnail":"thumbnails/animals/hamster-20261103.webp"}
+{"id":"animals-weekly-20261103-hamster","name":"햄스터","image":"images/animals/hamster-20261103-line-v2.png","thumbnail":"thumbnails/animals/hamster-20261103-line-v2.webp"}
 ];
 const food=[
 {name:'도넛',image:'images/food/donut.png',thumbnail:'thumbnails/food/donut.webp'},
@@ -17,7 +17,7 @@ const food=[
 {name:'아이스크림',image:'images/food/ice-cream.png',thumbnail:'thumbnails/food/ice-cream.webp'},
 {id:'food-weekly-20261021-bread',name:'빵',image:'images/food/bread-20261021.png',thumbnail:'thumbnails/food/bread-20261021.webp'},
 {id:'food-weekly-20261028-sandwich',name:'샌드위치',image:'images/food/sandwich-20261028.png',thumbnail:'thumbnails/food/sandwich-20261028.webp'},
-{"id":"food-weekly-20261104-croissant","name":"크루아상","image":"images/food/croissant-20261104.png","thumbnail":"thumbnails/food/croissant-20261104.webp"}
+{"id":"food-weekly-20261104-croissant","name":"크루아상","image":"images/food/croissant-20261104-line-v2.png","thumbnail":"thumbnails/food/croissant-20261104-line-v2.webp"}
 ];
 const produce=[
 {name:'사과',image:'images/produce/apple.png',thumbnail:'thumbnails/produce/apple.webp'},
@@ -26,7 +26,8 @@ const produce=[
 {name:'당근',image:'images/produce/carrot.png',thumbnail:'thumbnails/produce/carrot.webp'},
 {name:'브로콜리',image:'images/produce/broccoli.png',thumbnail:'thumbnails/produce/broccoli.webp'},
 {id:'produce-weekly-20261022-pumpkin',name:'호박',image:'images/produce/pumpkin-20261022.png',thumbnail:'thumbnails/produce/pumpkin-20261022.webp'},
-{id:'produce-weekly-20261029-bell-pepper',name:'파프리카',image:'images/produce/bell-pepper-20261029.png',thumbnail:'thumbnails/produce/bell-pepper-20261029.webp'}
+{id:'produce-weekly-20261029-bell-pepper',name:'파프리카',image:'images/produce/bell-pepper-20261029.png',thumbnail:'thumbnails/produce/bell-pepper-20261029.webp'},
+{"id":"produce-weekly-20261105-eggplant","name":"가지","image":"images/produce/eggplant-20261105.png","thumbnail":"thumbnails/produce/eggplant-20261105.webp"}
 ];
 const vehicles=[
 {name:'자동차',image:'images/vehicles/car.png',thumbnail:'thumbnails/vehicles/car.webp'},
@@ -35,7 +36,8 @@ const vehicles=[
 {name:'비행기',image:'images/vehicles/airplane.png',thumbnail:'thumbnails/vehicles/airplane.webp'},
 {name:'배',image:'images/vehicles/boat.png',thumbnail:'thumbnails/vehicles/boat.webp'},
 {id:'vehicles-weekly-20261022-pickup-truck',name:'트럭',image:'images/vehicles/pickup-truck-20261022.png',thumbnail:'thumbnails/vehicles/pickup-truck-20261022.webp'},
-{id:'vehicles-weekly-20261029-hot-air-balloon',name:'열기구',image:'images/vehicles/hot-air-balloon-20261029.png',thumbnail:'thumbnails/vehicles/hot-air-balloon-20261029.webp'}
+{id:'vehicles-weekly-20261029-hot-air-balloon',name:'열기구',image:'images/vehicles/hot-air-balloon-20261029.png',thumbnail:'thumbnails/vehicles/hot-air-balloon-20261029.webp'},
+{"id":"vehicles-weekly-20261105-motor-scooter","name":"스쿠터","image":"images/vehicles/motor-scooter-20261105.png","thumbnail":"thumbnails/vehicles/motor-scooter-20261105.webp"}
 ];
 const ocean=[
 {name:'고래',image:'images/ocean/whale.png',thumbnail:'thumbnails/ocean/whale.webp'},
