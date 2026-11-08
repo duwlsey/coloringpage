@@ -81,7 +81,8 @@ const play=[
 {name:'야구 글러브',image:'images/play/baseball-glove.png',thumbnail:'thumbnails/play/baseball-glove.webp'},
 {name:'테니스 라켓',image:'images/play/tennis-racket.png',thumbnail:'thumbnails/play/tennis-racket.webp'},
 {name:'스케이트보드',image:'images/play/skateboard.png',thumbnail:'thumbnails/play/skateboard.webp'},
-{id:'play-weekly-20261025-bowling-pin',name:'볼링핀',image:'images/play/bowling-pin-20261025.png',thumbnail:'thumbnails/play/bowling-pin-20261025.webp'}
+{id:'play-weekly-20261025-bowling-pin',name:'볼링핀',image:'images/play/bowling-pin-20261025.png',thumbnail:'thumbnails/play/bowling-pin-20261025.webp'},
+{"id":"play-weekly-20261108-table-tennis-paddle","name":"탁구 라켓","image":"images/play/table-tennis-paddle-20261108.png","thumbnail":"thumbnails/play/table-tennis-paddle-20261108.webp"}
 ];
 const space=[
 {name:'로켓',image:'images/space/rocket.png',thumbnail:'thumbnails/space/rocket.webp'},
@@ -89,7 +90,8 @@ const space=[
 {name:'인공위성',image:'images/space/satellite.png',thumbnail:'thumbnails/space/satellite.webp'},
 {name:'달 탐사차',image:'images/space/lunar-rover.png',thumbnail:'thumbnails/space/lunar-rover.webp'},
 {name:'토성',image:'images/space/saturn.png',thumbnail:'thumbnails/space/saturn.webp'},
-{id:'space-weekly-20261025-space-telescope',name:'우주 망원경',image:'images/space/space-telescope-20261025.png',thumbnail:'thumbnails/space/space-telescope-20261025.webp'}
+{id:'space-weekly-20261025-space-telescope',name:'우주 망원경',image:'images/space/space-telescope-20261025.png',thumbnail:'thumbnails/space/space-telescope-20261025.webp'},
+{"id":"space-weekly-20261108-space-capsule","name":"우주 캡슐","image":"images/space/space-capsule-20261108.png","thumbnail":"thumbnails/space/space-capsule-20261108.webp"}
 ];
 const imagination=[
 {id:'imagination-basic-circle',name:'상상 1',svg:'<circle cx="200" cy="200" r="95"/>'},
