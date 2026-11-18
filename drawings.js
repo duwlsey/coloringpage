@@ -32,7 +32,8 @@ const produce=[
 {id:'produce-weekly-20261022-pumpkin',name:'호박',image:'images/produce/pumpkin-20261022.png',thumbnail:'thumbnails/produce/pumpkin-20261022.webp'},
 {id:'produce-weekly-20261029-bell-pepper',name:'파프리카',image:'images/produce/bell-pepper-20261029.png',thumbnail:'thumbnails/produce/bell-pepper-20261029.webp'},
 {"id":"produce-weekly-20261105-eggplant","name":"가지","image":"images/produce/eggplant-20261105-v2.png","thumbnail":"thumbnails/produce/eggplant-20261105-v2.webp"},
-{"id":"produce-weekly-20261112-banana","name":"바나나","image":"images/produce/banana-20261112.png","thumbnail":"thumbnails/produce/banana-20261112.webp"}
+{"id":"produce-weekly-20261112-banana","name":"바나나","image":"images/produce/banana-20261112.png","thumbnail":"thumbnails/produce/banana-20261112.webp"},
+{"id":"produce-weekly-20261119-radish","name":"무","image":"images/produce/radish-20261119.png","thumbnail":"thumbnails/produce/radish-20261119.webp"}
 ];
 const vehicles=[
 {name:'자동차',image:'images/vehicles/car.png',thumbnail:'thumbnails/vehicles/car.webp'},
@@ -43,7 +44,8 @@ const vehicles=[
 {id:'vehicles-weekly-20261022-pickup-truck',name:'트럭',image:'images/vehicles/pickup-truck-20261022.png',thumbnail:'thumbnails/vehicles/pickup-truck-20261022.webp'},
 {id:'vehicles-weekly-20261029-hot-air-balloon',name:'열기구',image:'images/vehicles/hot-air-balloon-20261029.png',thumbnail:'thumbnails/vehicles/hot-air-balloon-20261029.webp'},
 {"id":"vehicles-weekly-20261105-motor-scooter","name":"스쿠터","image":"images/vehicles/motor-scooter-20261105.png","thumbnail":"thumbnails/vehicles/motor-scooter-20261105.webp"},
-{"id":"vehicles-weekly-20261112-helicopter","name":"헬리콥터","image":"images/vehicles/helicopter-20261112.png","thumbnail":"thumbnails/vehicles/helicopter-20261112.webp"}
+{"id":"vehicles-weekly-20261112-helicopter","name":"헬리콥터","image":"images/vehicles/helicopter-20261112.png","thumbnail":"thumbnails/vehicles/helicopter-20261112.webp"},
+{"id":"vehicles-weekly-20261119-excavator","name":"굴착기","image":"images/vehicles/excavator-20261119.png","thumbnail":"thumbnails/vehicles/excavator-20261119.webp"}
 ];
 const ocean=[
 {name:'고래',image:'images/ocean/whale.png',thumbnail:'thumbnails/ocean/whale.webp'},
