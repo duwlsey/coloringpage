@@ -9,7 +9,8 @@ const items=[
 {id:'animals-weekly-20261027-squirrel',name:'다람쥐',image:'images/animals/squirrel-20261027.png',thumbnail:'thumbnails/animals/squirrel-20261027.webp'},
 {"id":"animals-weekly-20261103-hamster","name":"햄스터","image":"images/animals/hamster-20261103-line-v2.png","thumbnail":"thumbnails/animals/hamster-20261103-line-v2.webp"},
 {"id":"animals-weekly-20261110-giraffe","name":"기린","image":"images/animals/giraffe-20261110.png","thumbnail":"thumbnails/animals/giraffe-20261110.webp"},
-{"id":"animals-weekly-20261117-rhinoceros","name":"코뿔소","image":"images/animals/rhinoceros-20261117.png","thumbnail":"thumbnails/animals/rhinoceros-20261117.webp"}
+{"id":"animals-weekly-20261117-rhinoceros","name":"코뿔소","image":"images/animals/rhinoceros-20261117.png","thumbnail":"thumbnails/animals/rhinoceros-20261117.webp"},
+{"id":"animals-weekly-20261124-hippopotamus","name":"하마","image":"images/animals/hippopotamus-20261124.png","thumbnail":"thumbnails/animals/hippopotamus-20261124.webp"}
 ];
 const food=[
 {name:'도넛',image:'images/food/donut.png',thumbnail:'thumbnails/food/donut.webp'},
