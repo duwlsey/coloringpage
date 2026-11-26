@@ -36,7 +36,7 @@ const produce=[
 {"id":"produce-weekly-20261105-eggplant","name":"가지","image":"images/produce/eggplant-20261105-v2.png","thumbnail":"thumbnails/produce/eggplant-20261105-v2.webp"},
 {"id":"produce-weekly-20261112-banana","name":"바나나","image":"images/produce/banana-20261112.png","thumbnail":"thumbnails/produce/banana-20261112.webp"},
 {"id":"produce-weekly-20261119-radish","name":"무","image":"images/produce/radish-20261119-bold-v2.png","thumbnail":"thumbnails/produce/radish-20261119-bold-v2.webp"},
-{"id":"produce-weekly-20261126-pineapple","name":"파인애플","image":"images/produce/pineapple-20261126.png","thumbnail":"thumbnails/produce/pineapple-20261126.webp"}
+{"id":"produce-weekly-20261126-pineapple","name":"파인애플","image":"images/produce/pineapple-20261126-v2.png","thumbnail":"thumbnails/produce/pineapple-20261126-v2.webp"}
 ];
 const vehicles=[
 {name:'자동차',image:'images/vehicles/car.png',thumbnail:'thumbnails/vehicles/car.webp'},
