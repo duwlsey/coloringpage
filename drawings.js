@@ -61,7 +61,8 @@ const ocean=[
 {"id":"ocean-weekly-20261030-stingray","name":"가오리","image":"images/ocean/stingray-20261030.png","thumbnail":"thumbnails/ocean/stingray-20261030.webp"},
 {"id":"ocean-weekly-20261106-seal","name":"바다표범","image":"images/ocean/seal-20261106.png","thumbnail":"thumbnails/ocean/seal-20261106.webp"},
 {"id":"ocean-weekly-20261113-hermit-crab","name":"소라게","image":"images/ocean/hermit-crab-20261113.png","thumbnail":"thumbnails/ocean/hermit-crab-20261113.webp"},
-{"id":"ocean-weekly-20261120-seashell","name":"조개껍데기","image":"images/ocean/seashell-20261120.png","thumbnail":"thumbnails/ocean/seashell-20261120.webp"}
+{"id":"ocean-weekly-20261120-seashell","name":"조개껍데기","image":"images/ocean/seashell-20261120.png","thumbnail":"thumbnails/ocean/seashell-20261120.webp"},
+{"id":"ocean-weekly-20261127-crab","name":"게","image":"images/ocean/crab-20261127.png","thumbnail":"thumbnails/ocean/crab-20261127.webp"}
 ];
 const dinosaurs=[
 {name:'티라노사우루스',image:'images/dinosaurs/tyrannosaurus.png',thumbnail:'thumbnails/dinosaurs/tyrannosaurus.webp'},
@@ -73,7 +74,8 @@ const dinosaurs=[
 {"id":"dinosaurs-weekly-20261030-pachycephalosaurus","name":"파키케팔로사우루스","image":"images/dinosaurs/pachycephalosaurus-20261030.png","thumbnail":"thumbnails/dinosaurs/pachycephalosaurus-20261030.webp"},
 {"id":"dinosaurs-weekly-20261106-spinosaurus","name":"스피노사우루스","image":"images/dinosaurs/spinosaurus-20261106.png","thumbnail":"thumbnails/dinosaurs/spinosaurus-20261106.webp"},
 {"id":"dinosaurs-weekly-20261113-iguanodon","name":"이구아노돈","image":"images/dinosaurs/iguanodon-20261113.png","thumbnail":"thumbnails/dinosaurs/iguanodon-20261113.webp"},
-{"id":"dinosaurs-weekly-20261120-styracosaurus","name":"스티라코사우루스","image":"images/dinosaurs/styracosaurus-20261120.png","thumbnail":"thumbnails/dinosaurs/styracosaurus-20261120.webp"}
+{"id":"dinosaurs-weekly-20261120-styracosaurus","name":"스티라코사우루스","image":"images/dinosaurs/styracosaurus-20261120.png","thumbnail":"thumbnails/dinosaurs/styracosaurus-20261120.webp"},
+{"id":"dinosaurs-weekly-20261127-diplodocus","name":"디플로도쿠스","image":"images/dinosaurs/diplodocus-20261127.png","thumbnail":"thumbnails/dinosaurs/diplodocus-20261127.webp"}
 ];
 const nature=[
 {name:'해바라기',image:'images/nature/sunflower.png',thumbnail:'thumbnails/nature/sunflower.webp'},
